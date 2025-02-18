@@ -1,6 +1,7 @@
 on termux:
 
 LD_LIBRARY_PATH="/system/vendor/lib64:/system/lib64" ./vulkan_dlopen
+
 ✅ Vulkan knižnica načítaná!
 ✅ vkCreateInstance úspešne zavolané!
 🔍 Počet Vulkan zariadení: 1
