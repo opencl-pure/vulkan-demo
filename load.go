@@ -12,7 +12,7 @@ var (
     vkCreateInstance               VkCreateInstanceFunc
     vkEnumeratePhysicalDevices     VkEnumeratePhysicalDevicesFunc
     vkGetPhysicalDeviceProperties  VkGetPhysicalDevicePropertiesFunc
-    VkGetPhysicalDeviceMemoryProperties VkGetPhysicalDeviceMemoryPropertiesFunc
+    vkGetPhysicalDeviceMemoryProperties VkGetPhysicalDeviceMemoryPropertiesFunc
 )
 
 // LoadVulkan – Načítanie Vulkan knižnice a funkcií
@@ -28,7 +28,7 @@ func LoadVulkan() {
     purego.RegisterLibFunc(&vkCreateInstance, vulkanLib, "vkCreateInstance")
     purego.RegisterLibFunc(&vkEnumeratePhysicalDevices, vulkanLib, "vkEnumeratePhysicalDevices")
     purego.RegisterLibFunc(&vkGetPhysicalDeviceProperties, vulkanLib, "vkGetPhysicalDeviceProperties")
-    purego.RegisterLibFunc(&VkGetPhysicalDeviceMemoryProperties, vulkanLib, "vkGetPhysicalDeviceMemoryProperties")
+    purego.RegisterLibFunc(&vkGetPhysicalDeviceMemoryProperties, vulkanLib, "vkGetPhysicalDeviceMemoryProperties")
 }
 
 // UnloadVulkan – Uvoľnenie knižnice

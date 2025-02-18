@@ -6,5 +6,4 @@ func main() {
 
     instance := CreateVulkanInstance()
     GetVulkanDevices(instance)
-    GetVulkanDevices0(instance)
 }
